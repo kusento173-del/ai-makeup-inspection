@@ -1,0 +1,8 @@
+daily_data/
+.tmp_team_inspect/
+.ruff_cache/
+.venv/
+venv/
+**/__pycache__/
+*.pyc
+*.log

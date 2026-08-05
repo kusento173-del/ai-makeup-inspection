@@ -1,0 +1,56 @@
+{
+  "data_root": "daily_data",
+  "shared_backend_project": "../AI经纪人",
+  "wps": {
+    "backup_dir": "%APPDATA%/kingsoft/office6/backup",
+    "roster_file": "%USERPROFILE%/WPSDrive/1766376694/WPS企业云盘/上海新心文化传媒有限公司/团队文档/数据组/桌面/桌面/才艺部、化妆师榜单/化妆/26年7月化妆固定主播名单.xlsx",
+    "raw_data_file": "%USERPROFILE%/WPSDrive/1766376694/WPS企业云盘/上海新心文化传媒有限公司/团队文档/数据组/桌面/桌面/原始数据/经纪人原始数据/2026年经纪人原始数据.xlsx",
+    "roster_backup_globs": [
+      "26年*月化妆固定主播名单.xlsx.*.et"
+    ],
+    "raw_data_backup_globs": [
+      "2026年经纪人原始数据.xlsx.*.et"
+    ],
+    "roster_sheet": "固定主播名单",
+    "staff_sheet": "化妆师人员表",
+    "raw_data_sheet": "原始数据",
+    "lookback_days": 60
+  },
+  "browsers": {
+    "新心": {
+      "cdp_url": "http://127.0.0.1:9223",
+      "page_url": "https://union.bytedance.com/open/portal/live_flow/followRoomList?appId=3000&tab=followUp"
+    },
+    "中鼎": {
+      "cdp_url": "http://127.0.0.1:9224",
+      "page_url": "https://union.bytedance.com/open/portal/live_flow/followRoomList?appId=3000&tab=followUp"
+    }
+  },
+  "warning_rule": {
+    "min_live_seconds": 7200,
+    "max_total_users": 333
+  },
+  "capture": {
+    "stream_timeout_seconds": 20,
+    "min_output_width": 720,
+    "sharpen_percent": 110,
+    "jpeg_quality": 95
+  },
+  "wechat": {
+    "enabled": true,
+    "team_webhook_envs": {
+      "陈玉队": "MAKEUP_WECHAT_TEAM_CHENYU",
+      "樱子队": "MAKEUP_WECHAT_TEAM_YINGZI",
+      "婉婷队": "MAKEUP_WECHAT_TEAM_WANTING",
+      "晶晶队": "MAKEUP_WECHAT_TEAM_JINGJING",
+      "芊芊队": "MAKEUP_WECHAT_TEAM_QIANQIAN",
+      "江江队": "MAKEUP_WECHAT_TEAM_JIANGJIANG",
+      "桃子队": "MAKEUP_WECHAT_TEAM_TAOZI"
+    },
+    "timeout_seconds": 30,
+    "min_message_interval_seconds": 0.2
+  },
+  "runtime": {
+    "monitor_interval_minutes": 10
+  }
+}
